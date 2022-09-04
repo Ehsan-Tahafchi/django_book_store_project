@@ -8,5 +8,6 @@
         <p>{{ book.description }}</p>
         <br>
     {% endfor %}
+    <a href="{% url 'BookCreateView' %}">اضافه کردن کتاب جدید</a>
 {% endblock content %}
 

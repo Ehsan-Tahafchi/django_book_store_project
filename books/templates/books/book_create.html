@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block page_title %},ویرایش کتاب {% endblock page_title %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ایجاد</button>
+    </form>
+    <br>
+    <a href="{% url 'BookListView' %}">لیست همه کتاب ها</a>
+{% endblock content %}
+
