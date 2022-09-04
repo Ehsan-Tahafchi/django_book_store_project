@@ -1,12 +1,12 @@
 {% extends '_base.html' %}
 
-{% block page_title %}ایجاد کتاب جدید {% endblock page_title %}
+{% block page_title %}ویرایش کتاب {{ book.title }}{% endblock page_title %}
 
 {% block content %}
     <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="ایجاد">
+        <input type="submit" value="ذخیره">
     </form>
     <br>
     <a href="{% url 'BookListView' %}">لیست همه کتاب ها</a>

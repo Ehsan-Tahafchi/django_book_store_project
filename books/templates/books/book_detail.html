@@ -1,12 +1,14 @@
 {% extends '_base.html' %}
 
-{% block page_title %}جزئیات کتاب {% endblock page_title %}
+{% block page_title %}جزئیات کتاب {{ book.title }}{% endblock page_title %}
 
 {% block content %}
     <h1>{{ book.title }}</h1>
     <p>{{ book.description }}</p>
     <p>{{ book.author }}</p>
     <h4>{{ book.price }}</h4>
+    <a href="{% url 'BookUpdateView' book.id %}"><button class="btn btn-info" type="button">ویرایش</button></a>
+    <a href="{% url 'BookDeleteView' book.id %}"><button class="btn btn-danger" type="button">حذف</button></a>
     <br>
     <a href="{% url 'BookListView' %}">لیست همه کتاب ها</a>
 {% endblock content %}
