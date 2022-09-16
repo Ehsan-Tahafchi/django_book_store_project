@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'books',
 
-
 ]
 
 MIDDLEWARE = [
@@ -116,7 +115,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -124,15 +122,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-LOGIN_REDIRECT_URL = 'HomePageView'
-LOGOUT_REDIRECT_URL = 'HomePageView'
+LOGIN_REDIRECT_URL = 'BookListView'
+LOGOUT_REDIRECT_URL = 'BookListView'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS =[str(BASE_DIR.joinpath('static'))]
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))

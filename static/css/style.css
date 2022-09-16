@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "BYekan";
-    src: url("../fonts/BYekan+.ttf");
+    font-family: "iranyekanwebmediumfanum";
+    src: url("../fonts/iranyekanwebmediumfanum.ttf");
 }
 @font-face {
-    font-family: "BYekan";
-    src: url("../fonts/BYekan+ Bold.ttf");
+    font-family: "iranyekanwebmediumfanum";
+    src: url("../fonts/iranyekanwebmediumfanum.ttf");
     font-weight: bold;
 }
 
 * {
-    font-family: 'BYekan', sans-serif;
+    font-family: 'iranyekanwebmediumfanum', sans-serif;
     line-height: 1.8rem;
 }
 
@@ -17,4 +17,16 @@
 @media (min-width: 576px) {
     /* CUSTOM WIDTHS */
     .w-sm-75 { width: 75%!important; }
+}
+.box{
+
+}
+.font{
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.cls-font{
+    font-size: 16px;
 }
