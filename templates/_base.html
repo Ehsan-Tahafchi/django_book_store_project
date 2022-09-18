@@ -46,7 +46,7 @@
                         <a style="color: black" class="nav-link" href="{% url 'BookCreateView' %}">افزودن کتاب</a>
                     </div>
                 </li>
-                <li class="nav-item" style="margin-right: 180px">
+                <li class="nav-item" style="margin-right: 71px">
                     <button type="button" class="btn btn-success"><a class="link-light text-decoration-none" href="{% url 'book_search' %}">جستجوی کتاب</a></button>
                 </li>
                 {% if user.is_authenticated %}
@@ -54,7 +54,7 @@
                         <button type="button" class="btn btn-success"><a class="link-light text-decoration-none" href="{% url 'book_favourite_list' %}">کتابخانه من</a></button>
                     </li>
                     <li class="nav-item" style="margin-right: 200px">
-                    <div class="font">سلام {{ user.username }}</div>
+                        <div class="font">سلام {{ user.username }} | <a class="link-light text-decoration-none font" href="{% url 'password_change' %}">اصلاح رمز عبور</a></div>
                     </li>
                     <li class="nav-item" style="margin-right: 100px">
                         <button type="button" class="btn btn-danger"><a class="link-light text-decoration-none" href="{% url 'logout' %}">خروج</a></button>
