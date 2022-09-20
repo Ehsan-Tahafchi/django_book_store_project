@@ -1,0 +1,4 @@
+Operations to perform:
+  Apply all migrations: accounts, admin, auth, books, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
