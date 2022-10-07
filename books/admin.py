@@ -8,4 +8,5 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Book)
+
 admin.site.register(Comment, CommentAdmin)
